@@ -6,6 +6,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarContentComponent } from './components/navbar/navbar-content/navbar-content.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductsCardComponent } from './components/products-card/products-card.component';
 
 
 
@@ -13,7 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     NavbarComponent,
     NavbarContentComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsCardComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   exports:[
     NavbarComponent, 
-    FooterComponent
+    FooterComponent,
+    ProductsCardComponent
   ]
 })
 export class SharedModule { }

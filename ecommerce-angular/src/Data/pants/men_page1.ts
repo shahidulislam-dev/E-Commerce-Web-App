@@ -32,7 +32,7 @@ export const mensPantsPage1=[
         "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/jean/v/c/n/30-586035-v-mart-original-imagmh7fzah3r2jj.jpeg?q=70",
         "brand": "V-MART",
         "title": "Men Slim Mid Rise Grey Jeans",
-        "color": "",
+        "color": "Light gray",
         "discountedPrice": 398,
         "price": 3999,
         "size": [
@@ -60,7 +60,7 @@ export const mensPantsPage1=[
         "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/jean/1/4/v/-original-imaggjcyhzz4myqh.jpeg?q=70",
         "brand": "KILLER",
         "title": "Men Slim Mid Rise Dark Blue Jeans",
-        "color": "",
+        "color": "Blue",
         "discountedPrice": 959,
         "price": 319,
         "size": [
@@ -89,7 +89,7 @@ export const mensPantsPage1=[
         "imageUrl": "https://rukminim1.flixcart.com/image/612/612/jean/n/u/3/bmw-darklevis-ben-martin-32-original-imaedpc4zcgjadsv.jpeg?q=70",
         "brand": "BEN MARTIN",
         "title": "Men Regular Mid Rise Dark Blue Jeans",
-        "color": "",
+        "color": "Blue",
         "discountedPrice": 499,
         "price": 1399,
         "size": [
