@@ -14,6 +14,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from "../shared/shared.module";
+import { CartComponent } from './components/cart/cart.component';
+import { PrductsDetailsComponent } from './components/prducts-details/prducts-details.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { PaymentSuccessComponent } from './components/payment-success/payment-success.component';
+import { OrdersComponent } from './components/orders/orders.component';
+import { OrderDetailsComponent } from './components/order-details/order-details.component';
+import { ProductsReviewCardComponent } from './components/prducts-details/products-review-card/products-review-card.component';
 
 
 
@@ -25,7 +33,15 @@ import { SharedModule } from "../shared/shared.module";
     MainCarouselComponent,
     ProductsSliderComponent,
     FeaturedComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent,
+    PrductsDetailsComponent,
+    CheckoutComponent,
+    PaymentComponent,
+    PaymentSuccessComponent,
+    OrdersComponent,
+    OrderDetailsComponent,
+    ProductsReviewCardComponent
 
   ],
   imports: [
@@ -43,7 +59,14 @@ import { SharedModule } from "../shared/shared.module";
   exports:[
     HomeComponent,
     FeaturedComponent,
-    ProductsComponent
+    ProductsComponent,
+    CartComponent,
+    PrductsDetailsComponent,
+    CheckoutComponent,
+    PaymentComponent,
+    PaymentSuccessComponent,
+    OrdersComponent,
+    OrderDetailsComponent
   ]
 })
 export class FeaturedModule { }
