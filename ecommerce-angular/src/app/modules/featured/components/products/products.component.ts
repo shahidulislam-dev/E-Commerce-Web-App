@@ -44,6 +44,6 @@ export class ProductsComponent implements OnInit{
     this.router.navigate([],{queryParams})
   }
 
-
+  
 
 }

@@ -7,6 +7,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarContentComponent } from './components/navbar/navbar-content/navbar-content.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsCardComponent } from './components/products-card/products-card.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { CartItemsComponent } from './components/cart-items/cart-items.component';
 
 
 
@@ -15,7 +17,9 @@ import { ProductsCardComponent } from './components/products-card/products-card.
     NavbarComponent,
     NavbarContentComponent,
     FooterComponent,
-    ProductsCardComponent
+    ProductsCardComponent,
+    StarRatingComponent,
+    CartItemsComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,9 @@ import { ProductsCardComponent } from './components/products-card/products-card.
   exports:[
     NavbarComponent, 
     FooterComponent,
-    ProductsCardComponent
+    ProductsCardComponent,
+    StarRatingComponent,
+    CartItemsComponent
   ]
 })
 export class SharedModule { }

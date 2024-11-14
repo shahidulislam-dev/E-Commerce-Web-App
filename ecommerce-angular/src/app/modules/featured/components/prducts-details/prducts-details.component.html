@@ -28,8 +28,8 @@
                 <button style="padding: 1.5rem;" class="w-full rounded" (click)="handleAddToCart()" mat-flat-button><span class="text-lg font-bold">Add To Cart</span></button>
             </div>
             <div>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, maiores!</p>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, maiores!</p>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dicta alias beatae! Soluta inventore, quidem rerum autem voluptate excepturi illo quae accusantium in, nostrum esse vero similique nam, aspernatur enim.</p>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur sunt consequuntur iure vitae voluptates. Dolorum aliquid at pariatur rem ipsum nobis officiis itaque, expedita ad, modi distinctio soluta blanditiis ex.</p>
             </div>
         </div>
 
@@ -39,10 +39,101 @@
         <div class="border rounded-md p-5" style="border-color: #1a1a1a;">
             <div class="lg:grid grid-cols-12 gap-7">
                 <div class="col-span-7">
-                    <ng-container *ngFor="let item of reviews">
-                        <app-products-review-card></app-products-review-card>
-                    </ng-container>
+                    <div class="space-y-10">
+                        <div *ngFor="let item of reviews">
+                            <app-products-review-card></app-products-review-card>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-span-5 mt-10 lg:mt-0">
+                    <div class="box">
+                        <h4 class="text-xl font-semibold pb-1">Product Ratings</h4>
+                        <div class="flex items-center space-x-3 pb-10">
+                           <app-star-rating/>
+                            <p class="opacity-60">45624 Ratings</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="grid grid-cols-12 justify-around items-center">
+                                <div class="col-span-2">
+                                    <span>Excellent</span>
+                                </div>
+                                <div class="col-span-8 px-4">
+                                    <mat-progress-bar mode="determinate" value="80"></mat-progress-bar>
+
+                                </div>
+                                <div class="col-span-2">
+                                    <span class="opacity-50">4345</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-12 justify-around items-center">
+                                <div class="col-span-2">
+                                    <span>Very Good</span>
+                                </div>
+                                <div class="col-span-8 px-4">
+                                    <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+
+                                </div>
+                                <div class="col-span-2">
+                                    <span class="opacity-50">2345</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-12 justify-around items-center">
+                                <div class="col-span-2">
+                                    <span>Good</span>
+                                </div>
+                                <div class="col-span-8 px-4">
+                                    <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+
+                                </div>
+                                <div class="col-span-2">
+                                    <span class="opacity-50">1345</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-12 justify-around items-center">
+                                <div class="col-span-2">
+                                    <span>Avarage</span>
+                                </div>
+                                <div class="col-span-8 px-4">
+                                    <mat-progress-bar mode="determinate" value="60"></mat-progress-bar>
+
+                                </div>
+                                <div class="col-span-2">
+                                    <span class="opacity-50">1545</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-12 justify-around items-center">
+                                <div class="col-span-2">
+                                    <span>Poor</span>
+                                </div>
+                                <div class="col-span-8 px-4">
+                                    <mat-progress-bar mode="determinate" value="20"></mat-progress-bar>
+
+                                </div>
+                                <div class="col-span-2">
+                                    <span class="opacity-50">245</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mt-10">
+        <h4 class="py-5 text-gray-400">Related Products</h4>
+        <div class="flex justify-around flex-wrap">
+            <div *ngFor="let item of relatedProducts">
+                <app-products-card [product]="item"></app-products-card>
             </div>
         </div>
     </section>

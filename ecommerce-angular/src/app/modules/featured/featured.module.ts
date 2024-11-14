@@ -22,7 +22,7 @@ import { PaymentSuccessComponent } from './components/payment-success/payment-su
 import { OrdersComponent } from './components/orders/orders.component';
 import { OrderDetailsComponent } from './components/order-details/order-details.component';
 import { ProductsReviewCardComponent } from './components/prducts-details/products-review-card/products-review-card.component';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 
@@ -54,6 +54,7 @@ import { ProductsReviewCardComponent } from './components/prducts-details/produc
     MatIconModule,
     MatCheckboxModule,
     MatRadioModule,
+    MatProgressBarModule,
     SharedModule
 ],
   exports:[
