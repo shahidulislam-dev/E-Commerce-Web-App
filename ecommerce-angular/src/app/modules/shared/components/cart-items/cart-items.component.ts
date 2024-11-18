@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-cart-items',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CartItemsComponent {
 
+  @Input() showButton:any;
 
   updateCartItem(num:any){
     console.log("number",num)

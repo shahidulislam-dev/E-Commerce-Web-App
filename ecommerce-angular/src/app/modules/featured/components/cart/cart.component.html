@@ -4,7 +4,7 @@
             <div class="box p-5 space-y-3">
                 <ng-container *ngIf="cart">
                     <div *ngFor="let product of cart; let last = last">
-                        <app-cart-items/>
+                        <app-cart-items showButton="true"/>
                         <mat-divider *ngIf = "!last"/>
                     </div>
                 </ng-container>
@@ -29,8 +29,13 @@
                             <span>Delivery Charge</span>
                             <span class="text-green-600">Free</span>
                         </div>
+                        <mat-divider></mat-divider>
+                        <div class="flex justify-between pt-2 text-lg font-semibold">
+                            <span>Total Amount</span>
+                            <span>৳3000</span>
+                        </div>
                     </div>
-                    
+                    <button mat-flat-button (click)="navigateToCheckout()" style="padding: 1.5rem; border-radius: 5px; font-size: 18px;" class="mt-8 p-28 px-10 w-full rounded-md">CHECKOUT</button>
                 </div>
             </ng-container>
         </section>

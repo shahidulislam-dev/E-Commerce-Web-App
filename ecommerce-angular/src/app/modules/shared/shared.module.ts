@@ -9,7 +9,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductsCardComponent } from './components/products-card/products-card.component';
 import { StarRatingComponent } from './components/star-rating/star-rating.component';
 import { CartItemsComponent } from './components/cart-items/cart-items.component';
-
+import { AddressCardComponent } from './components/address-card/address-card.component';
+import { OrderCardComponent } from './components/order-card/order-card.component';
+import { OrderTrackerComponent } from './components/order-tracker/order-tracker.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -19,20 +22,27 @@ import { CartItemsComponent } from './components/cart-items/cart-items.component
     FooterComponent,
     ProductsCardComponent,
     StarRatingComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    AddressCardComponent,
+    OrderCardComponent,
+    OrderTrackerComponent
   ],
   imports: [
     CommonModule,
     MatIconModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDividerModule
   ],
   exports:[
     NavbarComponent, 
     FooterComponent,
     ProductsCardComponent,
     StarRatingComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    AddressCardComponent,
+    OrderCardComponent,
+    OrderTrackerComponent
   ]
 })
 export class SharedModule { }
