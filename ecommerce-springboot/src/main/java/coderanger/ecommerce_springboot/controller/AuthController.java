@@ -24,18 +24,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
-
-    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
     private JwtUtils jwtUtils;
-
-    @Autowired
     private UserDetailsService userDetailsService;
-
-    @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    public AuthController(UserRepository userRepository, JwtUtils jwtUtils, UserDetailsService userDetailsService, PasswordEncoder passwordEncoder) {
+        this.userRepository = userRepository;
+        this.jwtUtils = jwtUtils;
+        this.userDetailsService = userDetailsService;
+        this.passwordEncoder = passwordEncoder;
+    }
 
     @PostMapping("/signup")
     public ResponseEntity<AuthResponse> createUserHandler(@RequestBody User user) throws UserException{

@@ -23,15 +23,17 @@ import java.util.stream.Collectors;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
+
     private ProductRepository productRepository;
-
-    @Autowired
     private UserService userService;
-
-
-    @Autowired
     private CategoryRepository categoryRepository;
+    @Autowired
+    public ProductServiceImpl(ProductRepository productRepository, UserService userService, CategoryRepository categoryRepository) {
+        this.productRepository = productRepository;
+        this.userService = userService;
+        this.categoryRepository = categoryRepository;
+    }
+
 
     @Override
     public Product createProduct(CreateProductRequest createProductRequest) {

@@ -13,11 +13,13 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
     private UserRepository userRepository;
-
-    @Autowired
     private JwtUtils jwtUtils;
+    @Autowired
+    public UserServiceImpl(UserRepository userRepository, JwtUtils jwtUtils){
+        this.userRepository = userRepository;
+        this.jwtUtils = jwtUtils;
+    }
 
 
     @Override
