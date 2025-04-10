@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "reviews")
-public class Review {
+@Entity()
+public class Reviews {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
 

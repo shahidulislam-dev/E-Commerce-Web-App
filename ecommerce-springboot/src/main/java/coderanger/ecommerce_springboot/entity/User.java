@@ -43,11 +43,11 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     @JsonIgnore
-    private List<Rating> ratings = new ArrayList<>();
+    private List<Ratings> ratings = new ArrayList<>();
 
     @JsonIgnore
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Review> reviews = new ArrayList<>();
+    private List<Reviews> reviews = new ArrayList<>();
 
     private LocalDateTime createdAt;
 }
