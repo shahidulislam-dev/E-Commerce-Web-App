@@ -41,23 +41,9 @@ public class AdminProductController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<Page<Product>> getAllProducts(
-            @RequestParam(required = false) String category,
-            @RequestParam(required = false) List<String> colors,
-            @RequestParam(required = false) List<String> size,
-            @RequestParam(required = false) Integer minPrice,
-            @RequestParam(required = false) Integer maxPrice,
-            @RequestParam(required = false) Integer minDiscount,
-            @RequestParam(required = false) String stock,
-            @RequestParam(required = false, defaultValue = "price_asc") String sort,
-            @RequestParam(required = false, defaultValue = "0") Integer pageNumber,
-            @RequestParam(required = false, defaultValue = "10") Integer pageSize
-    ) {
-        Page<Product> products = productService.getAllProducts(
-                category, colors, size, minPrice, maxPrice,
-                minDiscount, stock, sort, pageNumber, pageSize
-        );
-        return new ResponseEntity<>(products, HttpStatus.OK);
+    public ResponseEntity<List<Product>> findAllProducts() {
+        List<Product> products = productService.findAllProducts();
+        return ResponseEntity.ok(products);
     }
 
 
