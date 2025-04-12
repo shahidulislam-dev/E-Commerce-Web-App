@@ -74,7 +74,7 @@ public class ProductServiceImpl implements ProductService {
         product.setDescription(createProductRequest.getDescription());
         product.setDiscountPrice(createProductRequest.getDiscountPrice());
         product.setDiscountPercent(createProductRequest.getDiscountPercent());
-        product.setImageUrl(createProductRequest.getImageURL());
+        product.setImageUrl(createProductRequest.getImageUrl());
         product.setBrand(createProductRequest.getBrand());
         product.setPrice(createProductRequest.getPrice());
         product.setSizes(createProductRequest.getSize());

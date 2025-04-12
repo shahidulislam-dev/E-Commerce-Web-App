@@ -8,18 +8,18 @@ import org.springframework.data.domain.Page;
 import java.util.List;
 
 public interface ProductService {
-    public Product createProduct(CreateProductRequest createProductRequest);
+    Product createProduct(CreateProductRequest createProductRequest);
 
-    public String deleteProduct(Long productId) throws ProductException;
+    String deleteProduct(Long productId) throws ProductException;
 
-    public Product updateProduct(Long productId, Product req) throws ProductException;
+    Product updateProduct(Long productId, Product req) throws ProductException;
 
-    public Product findProductById(Long id) throws ProductException;
+    Product findProductById(Long id) throws ProductException;
 
-    public List<Product> findProductByCategory(String category);
+    List<Product> findProductByCategory(String category);
 
-    public Page<Product> getAllProducts(String category, List<String> colors, List<String> size, Integer minPrice, Integer maxPrice,
+    Page<Product> getAllProducts(String category, List<String> colors, List<String> size, Integer minPrice, Integer maxPrice,
                                         Integer minDiscount, String stock, String sort, Integer pageNUmber, Integer pageSize);
 
-    public List<Product> findAllProducts();
+    List<Product> findAllProducts();
 }

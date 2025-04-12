@@ -30,7 +30,7 @@ public class CreateProductRequest {
 
     private Set<Size> size = new HashSet<>();
 
-    private String imageURL;
+    private String imageUrl;
 
     private String topLevelCategory;
     private String secondLevelCategory;

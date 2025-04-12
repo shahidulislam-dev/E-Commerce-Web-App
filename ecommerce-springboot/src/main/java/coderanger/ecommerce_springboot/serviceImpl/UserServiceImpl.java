@@ -33,12 +33,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findUserProfileByJwt(String jwt) throws UserException {
+        if (jwt == null || jwt.isBlank()) {
+            throw new UserException("Invalid JWT token");
+        }
+
         String email = jwtUtils.getEmailFromToken(jwt);
 
-        User user = userRepository.findByEmail((email));
+        if (email == null) {
+            throw new UserException("Invalid JWT token - unable to extract email");
+        }
 
-        if(user == null){
-            throw  new UserException("User Not Found With This Email - "+email);
+        User user = userRepository.findByEmail(email);
+        if (user == null) {
+            throw new UserException("User Not Found With This Email - " + email);
         }
         return user;
     }

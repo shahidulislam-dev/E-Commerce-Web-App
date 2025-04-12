@@ -66,11 +66,21 @@ public class JwtUtils {
                 .compact();
     }
 
-    public String getEmailFromToken(String jwt){
-        jwt = jwt.substring(7);
-        Claims claims = Jwts.parserBuilder().setSigningKey(getSigningKey()).build().parseClaimsJws(jwt).getBody();
-        String email = String.valueOf(claims.get("email"));
-        return email;
+    public String getEmailFromToken(String jwt) {
+        if (jwt == null || !jwt.startsWith("Bearer ")) {
+            return null;
+        }
+        try {
+            jwt = jwt.substring(7);
+            Claims claims = Jwts.parserBuilder()
+                    .setSigningKey(getSigningKey())
+                    .build()
+                    .parseClaimsJws(jwt)
+                    .getBody();
+            return claims.getSubject();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     public Boolean validateToken(String token) {

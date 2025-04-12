@@ -1,10 +1,12 @@
 package coderanger.ecommerce_springboot.controller;
 
+import coderanger.ecommerce_springboot.entity.Cart;
 import coderanger.ecommerce_springboot.entity.User;
 import coderanger.ecommerce_springboot.exception.UserException;
 import coderanger.ecommerce_springboot.repositoris.UserRepository;
 import coderanger.ecommerce_springboot.request.LoginRequest;
 import coderanger.ecommerce_springboot.response.AuthResponse;
+import coderanger.ecommerce_springboot.services.CartService;
 import coderanger.ecommerce_springboot.utils.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,12 +30,14 @@ public class AuthController {
     private JwtUtils jwtUtils;
     private UserDetailsService userDetailsService;
     private PasswordEncoder passwordEncoder;
+    private CartService cartService;
     @Autowired
-    public AuthController(UserRepository userRepository, JwtUtils jwtUtils, UserDetailsService userDetailsService, PasswordEncoder passwordEncoder) {
+    public AuthController(UserRepository userRepository, JwtUtils jwtUtils, UserDetailsService userDetailsService, PasswordEncoder passwordEncoder, CartService cartService) {
         this.userRepository = userRepository;
         this.jwtUtils = jwtUtils;
         this.userDetailsService = userDetailsService;
         this.passwordEncoder = passwordEncoder;
+        this.cartService = cartService;
     }
 
     @PostMapping("/signup")
@@ -55,6 +59,7 @@ public class AuthController {
         createdUser.setLastName(lastName);
 
         User savedUser = userRepository.save(createdUser);
+        Cart cart = cartService.createCart(savedUser);
 
         Authentication authentication = new UsernamePasswordAuthenticationToken(savedUser.getEmail(), savedUser.getPassword());
         SecurityContextHolder.getContext().setAuthentication(authentication);

@@ -14,7 +14,7 @@ public interface CartItemService {
 
     CartItem isCartItemExist(Cart cart, Product product, String size, Long userId);
 
-    public void removeCartItem(Long userId, Long cartItemId) throws CartItemException, UserException;
+    void removeCartItem(Long userId, Long cartItemId) throws CartItemException, UserException;
 
     CartItem findCartItemById(Long cartItemId) throws CartItemException;
 }
