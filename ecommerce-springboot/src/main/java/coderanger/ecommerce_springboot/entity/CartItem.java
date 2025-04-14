@@ -2,11 +2,10 @@ package coderanger.ecommerce_springboot.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Setter
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -29,7 +28,7 @@ public class CartItem {
 
     private Integer price;
 
-    private Integer discountedPrice;
+    private Integer discountPrice;
 
     private Long userId;
 }

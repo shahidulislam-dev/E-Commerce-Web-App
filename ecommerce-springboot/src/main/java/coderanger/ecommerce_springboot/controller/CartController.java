@@ -1,11 +1,14 @@
 package coderanger.ecommerce_springboot.controller;
 
 import coderanger.ecommerce_springboot.entity.Cart;
+import coderanger.ecommerce_springboot.entity.CartItem;
 import coderanger.ecommerce_springboot.entity.User;
+import coderanger.ecommerce_springboot.exception.CartItemException;
 import coderanger.ecommerce_springboot.exception.ProductException;
 import coderanger.ecommerce_springboot.exception.UserException;
 import coderanger.ecommerce_springboot.request.AddItemRequest;
 import coderanger.ecommerce_springboot.response.ApiResponse;
+import coderanger.ecommerce_springboot.services.CartItemService;
 import coderanger.ecommerce_springboot.services.CartService;
 import coderanger.ecommerce_springboot.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +22,13 @@ public class CartController {
 
     private CartService cartService;
     private UserService userService;
+    private CartItemService cartItemService;
 
     @Autowired
-    public CartController(CartService cartService, UserService userService) {
+    public CartController(CartService cartService, UserService userService, CartItemService cartItemService) {
         this.cartService = cartService;
         this.userService = userService;
+        this.cartItemService = cartItemService;
     }
 
     @GetMapping("/")
@@ -46,4 +51,49 @@ public class CartController {
 
         return new ResponseEntity<>(res, HttpStatus.OK);
     }
+
+    @DeleteMapping("/remove/item/{id}")
+    public ResponseEntity<ApiResponse> removeCartItem(@PathVariable("id") Long cartItemId,
+                                                      @RequestHeader("Authorization") String jwt)
+            throws UserException, CartItemException {
+
+        User user = userService.findUserProfileByJwt(jwt);
+        cartItemService.removeCartItem(user.getId(), cartItemId);
+
+        ApiResponse res = new ApiResponse();
+        res.setMessage("Item Removed From Cart");
+        res.setStatus(true);
+
+        return new ResponseEntity<>(res, HttpStatus.OK);
+    }
+
+    @PutMapping("/update/item/{id}")
+    public ResponseEntity<CartItem> updateCartItem(@PathVariable("id") Long cartItemId,
+                                                   @RequestBody CartItem cartItem,
+                                                   @RequestHeader("Authorization") String jwt)
+            throws UserException, CartItemException {
+
+        User user = userService.findUserProfileByJwt(jwt);
+        CartItem updated = cartItemService.updateCartItem(user.getId(), cartItemId, cartItem);
+
+        return new ResponseEntity<>(updated, HttpStatus.OK);
+    }
+
+    @GetMapping("/find/item/{id}")
+    public ResponseEntity<CartItem> getCartItemById(@PathVariable("id") Long cartItemId,
+                                                    @RequestHeader("Authorization") String jwt)
+            throws CartItemException, UserException {
+
+        User user = userService.findUserProfileByJwt(jwt);
+        CartItem cartItem = cartItemService.findCartItemById(cartItemId);
+
+        if (!cartItem.getUserId().equals(user.getId())) {
+            throw new UserException("Unauthorized access to cart item");
+        }
+
+        return new ResponseEntity<>(cartItem, HttpStatus.OK);
+    }
+
+
+
 }

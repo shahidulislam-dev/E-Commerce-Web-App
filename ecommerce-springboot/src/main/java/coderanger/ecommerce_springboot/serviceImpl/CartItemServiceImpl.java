@@ -33,11 +33,9 @@ public class CartItemServiceImpl implements CartItemService {
     public CartItem createCartItem(CartItem cartItem) {
         cartItem.setQuantity(1);
         cartItem.setPrice(cartItem.getProduct().getPrice() * cartItem.getQuantity());
-        cartItem.setDiscountedPrice(cartItem.getProduct().getDiscountPrice() * cartItem.getQuantity());
+        cartItem.setDiscountPrice(cartItem.getProduct().getDiscountPrice() * cartItem.getQuantity());
 
-        CartItem createdCartItem = cartItemRepository.save(cartItem);
-
-        return createdCartItem;
+        return cartItemRepository.save(cartItem);
     }
 
     @Override
@@ -48,11 +46,10 @@ public class CartItemServiceImpl implements CartItemService {
         if(user.getId().equals(userId)){
             item.setQuantity(cartItem.getQuantity());
             item.setPrice(item.getQuantity() * item.getProduct().getPrice());
-            item.setDiscountedPrice(item.getProduct().getDiscountPrice() * item.getQuantity());
+            item.setDiscountPrice(item.getProduct().getDiscountPrice() * item.getQuantity());
         }
-        CartItem updateCartItem = cartItemRepository.save(item);
 
-        return updateCartItem;
+        return cartItemRepository.save(item);
     }
 
     @Override

@@ -55,6 +55,7 @@ public class CartServiceImpl implements CartService {
 
             CartItem createdCartItem = cartItemService.createCartItem(cartItem);
             cart.getCartItems().add(createdCartItem);
+            cartRepository.save(cart);
         }
         return "Item Added To Cart";
     }
@@ -64,19 +65,19 @@ public class CartServiceImpl implements CartService {
         Cart cart = cartRepository.findByUserId(userId);
 
         int totalPrice = 0;
-        int totalDiscountedPrice = 0;
+        int totalDiscountPrice = 0;
         int totalItem = 0;
 
         for(CartItem cartItem : cart.getCartItems()){
             totalPrice = totalPrice + cartItem.getPrice();
-            totalDiscountedPrice = totalDiscountedPrice + cartItem.getDiscountedPrice();
+            totalDiscountPrice = totalDiscountPrice + cartItem.getDiscountPrice();
             totalItem = totalItem + cartItem.getQuantity();
         }
 
-        cart.setTotalDiscountPrice(totalDiscountedPrice);
+        cart.setTotalDiscountPrice(totalDiscountPrice);
         cart.setTotalItem(totalItem);
         cart.setTotalPrice(totalPrice);
-        cart.setDiscount(totalPrice - totalDiscountedPrice);
+        cart.setDiscount(totalPrice - totalDiscountPrice);
 
         return cartRepository.save(cart);
     }

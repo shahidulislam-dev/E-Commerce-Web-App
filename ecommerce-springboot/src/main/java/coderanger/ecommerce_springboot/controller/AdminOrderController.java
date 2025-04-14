@@ -1,6 +1,6 @@
 package coderanger.ecommerce_springboot.controller;
 
-import coderanger.ecommerce_springboot.entity.Order;
+import coderanger.ecommerce_springboot.entity.Orders;
 import coderanger.ecommerce_springboot.exception.OrderException;
 import coderanger.ecommerce_springboot.response.ApiResponse;
 import coderanger.ecommerce_springboot.services.OrderService;
@@ -22,34 +22,34 @@ public class AdminOrderController {
     }
 
     @GetMapping("/")
-    public ResponseEntity<List<Order>> getAllOrdersHandler(){
-        List<Order> orders = orderService.getAllOrders();
-        return new ResponseEntity<List<Order>>(orders, HttpStatus.ACCEPTED);
+    public ResponseEntity<List<Orders>> getAllOrdersHandler(){
+        List<Orders> orders = orderService.getAllOrders();
+        return new ResponseEntity<List<Orders>>(orders, HttpStatus.ACCEPTED);
     }
 
     @PutMapping("/{orderId}/confirmed")
-    public ResponseEntity<Order> confirmOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
-        Order order = orderService.confirmedOrder(orderId);
+    public ResponseEntity<Orders> confirmOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
+        Orders order = orderService.confirmedOrder(orderId);
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
     @PutMapping("/{orderId}/shipped")
-    public ResponseEntity<Order> shippedOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
-        Order order = orderService.shippedOrder(orderId);
+    public ResponseEntity<Orders> shippedOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
+        Orders order = orderService.shippedOrder(orderId);
 
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
     @PutMapping("/{orderId}/deliver")
-    public ResponseEntity<Order> deliverOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
-        Order order = orderService.deliveredOrder(orderId);
+    public ResponseEntity<Orders> deliverOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
+        Orders order = orderService.deliveredOrder(orderId);
 
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
 
     @PutMapping("/{orderId}/cancel")
-    public ResponseEntity<Order> cancelOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
-        Order order = orderService.canceledOrder(orderId);
+    public ResponseEntity<Orders> cancelOrderHandler(@PathVariable Long orderId, @RequestHeader("Authorization") String jwt) throws OrderException{
+        Orders order = orderService.canceledOrder(orderId);
 
         return new ResponseEntity<>(order, HttpStatus.OK);
     }
