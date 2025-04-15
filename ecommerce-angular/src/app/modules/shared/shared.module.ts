@@ -13,6 +13,7 @@ import { AddressCardComponent } from './components/address-card/address-card.com
 import { OrderCardComponent } from './components/order-card/order-card.component';
 import { OrderTrackerComponent } from './components/order-tracker/order-tracker.component';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatIconModule,
     MatButtonModule,
     MatMenuModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule
   ],
   exports:[
     NavbarComponent, 
@@ -42,7 +44,7 @@ import {MatDividerModule} from '@angular/material/divider';
     CartItemsComponent,
     AddressCardComponent,
     OrderCardComponent,
-    OrderTrackerComponent
+    OrderTrackerComponent,
   ]
 })
 export class SharedModule { }

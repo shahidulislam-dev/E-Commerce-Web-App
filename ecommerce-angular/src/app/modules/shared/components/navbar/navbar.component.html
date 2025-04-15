@@ -24,9 +24,9 @@
 
             <div class="flex items-center space-x-5">
                 <button mat-icon-button (click)="navigateTo('cart')"><mat-icon color="black"><span class="text-gray-800">shopping_cart</span></mat-icon></button>
-                <button *ngIf="false" mat-raised-button class="text-white rounded" type="" >Login</button>
+                <button (click)="handleOpenLoginModal()" *ngIf="true" mat-raised-button class="text-white rounded" type="" >Login</button>
     
-                <div *ngIf="true" class="ml-3 flex items-center">
+                <div *ngIf="false" class="ml-3 flex items-center">
                     <div class="flex items-center">
                         <span class="font-bold text-lg">Sharif</span>
                         <button mat-button [matMenuTriggerFor]="profileManue">

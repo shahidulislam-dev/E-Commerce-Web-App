@@ -1,0 +1,42 @@
+<section>
+    <div class="container overflow-hidden text-center bg-gray-700 p-3">
+        <form [formGroup]="registerForm" (ngSubmit)="submitForm()">
+            <h4>Ecommerce Web App</h4>
+            <div class="space-y-2">
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>First Name</mat-label>
+                    <input matInput formControlName="firstName" required firstName>
+                    <mat-error *ngIf="registerForm.controls['firstName'].hasError('required')">Fist Name Is Required</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="lastName" required firstName>
+                    <mat-error *ngIf="registerForm.controls['lastName'].hasError('required')">Last Name Is Required</mat-error>
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email" required email>
+
+                    <mat-error *ngIf="registerForm.controls['email'].hasError('required')">Email Is Required</mat-error>
+                    <mat-error *ngIf="registerForm.controls['email'].hasError('email')">Please enter a valid email address</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="w-full">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password" required password>
+
+                    <mat-error *ngIf="registerForm.controls['password'].hasError('required')">Password Is Required</mat-error>
+                    <mat-error *ngIf="registerForm.controls['password'].hasError('minlength')">Password should be 8 characters long</mat-error>
+                </mat-form-field>
+
+                <div class="">
+                    <button mat-raised-button style="padding: 1.7rem" class="w-full" style="border-radius: 5px; font-size: 18px; background-color: #00dddd; color: black;">Sign Up</button>
+                </div>
+                <div class="">
+                    <span>Already have an account?</span>
+                    <button mat-button (click)="changeTemplate()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

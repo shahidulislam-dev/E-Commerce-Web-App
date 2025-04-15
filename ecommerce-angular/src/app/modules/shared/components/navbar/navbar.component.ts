@@ -1,5 +1,8 @@
 import { Component, HostListener } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { AuthComponent } from '../../../auth/auth.component';
+import { log } from 'console';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  constructor(private router: Router){}
+  constructor(private router: Router, private dialog: MatDialog){}
 
   currentSection:any
   isNavbarContentOpen: any;
@@ -39,6 +42,15 @@ export class NavbarComponent {
     if(modalContainer && !clickInsideButton && this.isNavbarContentOpen){
       this.closeNavbarContent()
     }
+  }
+
+  handleOpenLoginModal = ()=>{
+    console.log("AuthWork");
+    
+    this.dialog.open(AuthComponent, {
+      width:"500px",
+      disableClose:false
+    })
   }
 
 }
