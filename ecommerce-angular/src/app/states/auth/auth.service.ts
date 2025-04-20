@@ -3,7 +3,7 @@ import { BASE_API_URL } from "../../config/api";
 import { HttpClient } from "@angular/common/http";
 import { Store } from "@ngrx/store";
 import { catchError, map, of } from "rxjs";
-import { loginFailure, loginSuccess, registerFailure, registerSuccess } from "./auth.actions";
+import { loginFailure, loginSuccess,  registerFailure, registerSuccess } from "./auth.actions";
 
 
 @Injectable({
@@ -57,4 +57,6 @@ export class AuthService{
             })
         ).subscribe((action)=> this.store.dispatch(action))
     }
+
+    
 }

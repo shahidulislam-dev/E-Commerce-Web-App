@@ -11,6 +11,6 @@ export class ProductsCardComponent {
   @Input() product:any
 
   navigate(){
-    this.router.navigate([`/products-details/${5}`]);
+    this.router.navigate([`/products-details/${this.product.id}`]);
   }
 }

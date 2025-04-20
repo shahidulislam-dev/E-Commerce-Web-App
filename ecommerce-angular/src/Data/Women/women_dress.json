@@ -4,9 +4,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -22,9 +22,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -32,9 +32,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -50,9 +50,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -60,9 +60,9 @@
         "brand": "Sheetal Associates",
         "title": "Women Fit and Flare Yellow, White, Green Dress",
         "color": "yellow",
-        "discountedPrice": 459,
+        "discountPrice": 459,
         "price": 1999,
-        "discountPersent": 77,
+        "discountPercent": 77,
         "size": [
             {
               "name": "S",
@@ -78,9 +78,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -88,9 +88,9 @@
         "brand": "Sheetal Associates",
         "title": "Women Fit and Flare Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 459,
+        "discountPrice": 459,
         "price": 1999,
-        "discountPersent": 77,
+        "discountPercent": 77,
         "size": [
             {
               "name": "S",
@@ -106,9 +106,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -116,9 +116,9 @@
         "brand": "AAYU",
         "title": "Women A-line Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 420,
+        "discountPrice": 420,
         "price": 1499,
-        "discountPersent": 71,
+        "discountPercent": 71,
         "size": [
             {
               "name": "S",
@@ -134,9 +134,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -144,9 +144,9 @@
         "brand": "Janasya",
         "title": "Women Fit and Flare Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 902,
+        "discountPrice": 902,
         "price": 2689,
-        "discountPersent": 66,
+        "discountPercent": 66,
         "size": [
             {
               "name": "S",
@@ -162,9 +162,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -172,9 +172,9 @@
         "brand": "SHRI RADHA RANI CREATIONS",
         "title": "Women A-line Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 549,
+        "discountPrice": 549,
         "price": 2999,
-        "discountPersent": 81,
+        "discountPercent": 81,
         "size": [
             {
               "name": "S",
@@ -190,9 +190,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -200,9 +200,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -218,9 +218,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -228,9 +228,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Ribbed Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 329,
+        "discountPrice": 329,
         "price": 1099,
-        "discountPersent": 70,
+        "discountPercent": 70,
         "size": [
             {
               "name": "S",
@@ -246,9 +246,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -256,9 +256,9 @@
         "brand": "Rudraaksha",
         "title": "Women Maxi Yellow Dress With Mask",
         "color": "yellow",
-        "discountedPrice": 380,
+        "discountPrice": 380,
         "price": 1999,
-        "discountPersent": 80,
+        "discountPercent": 80,
         "size": [
             {
               "name": "S",
@@ -274,9 +274,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -284,9 +284,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -302,9 +302,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -312,9 +312,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -330,9 +330,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -340,9 +340,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Skater Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 374,
+        "discountPrice": 374,
         "price": 1099,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -358,9 +358,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -368,9 +368,9 @@
         "brand": "NE STYLE",
         "title": "Women Pleated Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 499,
+        "discountPrice": 499,
         "price": 1999,
-        "discountPersent": 75,
+        "discountPercent": 75,
         "size": [
             {
               "name": "S",
@@ -386,9 +386,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -396,9 +396,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Skater Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 494,
+        "discountPrice": 494,
         "price": 1649,
-        "discountPersent": 70,
+        "discountPercent": 70,
         "size": [
             {
               "name": "S",
@@ -414,9 +414,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -424,9 +424,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Maxi Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 672,
+        "discountPrice": 672,
         "price": 2449,
-        "discountPersent": 72,
+        "discountPercent": 72,
         "size": [
             {
               "name": "S",
@@ -442,9 +442,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -452,9 +452,9 @@
         "brand": "Aarvia",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 699,
+        "discountPrice": 699,
         "price": 1999,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -470,9 +470,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -480,9 +480,9 @@
         "brand": "VISHVAA ENTERPRISE",
         "title": "Women Drop Waist Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 678,
+        "discountPrice": 678,
         "price": 3390,
-        "discountPersent": 80,
+        "discountPercent": 80,
         "size": [
             {
               "name": "S",
@@ -498,9 +498,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -508,9 +508,9 @@
         "brand": "FALTOOO FASHION",
         "title": "Women Bodycon Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 399,
+        "discountPrice": 399,
         "price": 499,
-        "discountPersent": 20,
+        "discountPercent": 20,
         "size": [
             {
               "name": "S",
@@ -526,9 +526,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -536,9 +536,9 @@
         "brand": "dyrectdeals",
         "title": "Women Maxi White, Black, Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 379,
+        "discountPrice": 379,
         "price": 2199,
-        "discountPersent": 82,
+        "discountPercent": 82,
         "size": [
             {
               "name": "S",
@@ -554,9 +554,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -564,9 +564,9 @@
         "brand": "SASSAFRAS",
         "title": "Women Wrap White, Brown, Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 594,
+        "discountPrice": 594,
         "price": 1699,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -582,9 +582,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -592,9 +592,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Ribbed Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 244,
+        "discountPrice": 244,
         "price": 699,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -610,9 +610,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -620,9 +620,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Maxi Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 666,
+        "discountPrice": 666,
         "price": 2149,
-        "discountPersent": 69,
+        "discountPercent": 69,
         "size": [
             {
               "name": "S",
@@ -638,9 +638,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -648,9 +648,9 @@
         "brand": "AASK",
         "title": "Women Pleated Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 499,
+        "discountPrice": 499,
         "price": 2599,
-        "discountPersent": 80,
+        "discountPercent": 80,
         "size": [
             {
               "name": "S",
@@ -666,9 +666,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -676,9 +676,9 @@
         "brand": "SHRI RADHA RANI CREATIONS",
         "title": "Women A-line Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 549,
+        "discountPrice": 549,
         "price": 2999,
-        "discountPersent": 81,
+        "discountPercent": 81,
         "size": [
             {
               "name": "S",
@@ -694,9 +694,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -704,9 +704,9 @@
         "brand": "SUBH LAXMI",
         "title": "Women Fit and Flare Dark Green, Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 399,
+        "discountPrice": 399,
         "price": 1599,
-        "discountPersent": 75,
+        "discountPercent": 75,
         "size": [
             {
               "name": "S",
@@ -722,9 +722,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -732,9 +732,9 @@
         "brand": "Vishudh",
         "title": "Women Ethnic Dress Maroon, Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 895,
+        "discountPrice": 895,
         "price": 2899,
-        "discountPersent": 69,
+        "discountPercent": 69,
         "size": [
             {
               "name": "S",
@@ -750,9 +750,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -760,9 +760,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women A-line Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 443,
+        "discountPrice": 443,
         "price": 1149,
-        "discountPersent": 61,
+        "discountPercent": 61,
         "size": [
             {
               "name": "S",
@@ -778,9 +778,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -788,9 +788,9 @@
         "brand": "SHREEJI ENTERPRISE",
         "title": "Women A-line Dark Blue, Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 389,
+        "discountPrice": 389,
         "price": 999,
-        "discountPersent": 61,
+        "discountPercent": 61,
         "size": [
             {
               "name": "S",
@@ -806,9 +806,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -816,9 +816,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women A-line Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 464,
+        "discountPrice": 464,
         "price": 1549,
-        "discountPersent": 70,
+        "discountPercent": 70,
         "size": [
             {
               "name": "S",
@@ -834,9 +834,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -844,9 +844,9 @@
         "brand": "Fashion2wear",
         "title": "Women Maxi Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 449,
+        "discountPrice": 449,
         "price": 999,
-        "discountPersent": 55,
+        "discountPercent": 55,
         "size": [
             {
               "name": "S",
@@ -862,9 +862,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -872,9 +872,9 @@
         "brand": "Tokyo Talkies",
         "title": "Women Skater Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 374,
+        "discountPrice": 374,
         "price": 1249,
-        "discountPersent": 70,
+        "discountPercent": 70,
         "size": [
             {
               "name": "S",
@@ -890,9 +890,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -900,9 +900,9 @@
         "brand": "Rudraaksha",
         "title": "Women Fit and Flare Yellow Dress With Mask",
         "color": "yellow",
-        "discountedPrice": 366,
+        "discountPrice": 366,
         "price": 1999,
-        "discountPersent": 81,
+        "discountPercent": 81,
         "size": [
             {
               "name": "S",
@@ -918,9 +918,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -928,9 +928,9 @@
         "brand": "Oomph!",
         "title": "Women Ruffled Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 479,
+        "discountPrice": 479,
         "price": 2330,
-        "discountPersent": 79,
+        "discountPercent": 79,
         "size": [
             {
               "name": "S",
@@ -946,9 +946,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -956,9 +956,9 @@
         "brand": "Selvia",
         "title": "Women High Low Yellow, White Dress",
         "color": "yellow",
-        "discountedPrice": 459,
+        "discountPrice": 459,
         "price": 1997,
-        "discountPersent": 77,
+        "discountPercent": 77,
         "size": [
             {
               "name": "S",
@@ -974,9 +974,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -984,9 +984,9 @@
         "brand": "SLENOR",
         "title": "Women Pleated Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 854,
+        "discountPrice": 854,
         "price": 2499,
-        "discountPersent": 65,
+        "discountPercent": 65,
         "size": [
             {
               "name": "S",
@@ -1002,9 +1002,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -1012,9 +1012,9 @@
         "brand": "PRETTY LOVING THING",
         "title": "Women Two Piece Dress Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 537,
+        "discountPrice": 537,
         "price": 1299,
-        "discountPersent": 58,
+        "discountPercent": 58,
         "size": [
             {
               "name": "S",
@@ -1030,9 +1030,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -1040,9 +1040,9 @@
         "brand": "Ishin",
         "title": "Women Fit and Flare Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 1299,
+        "discountPrice": 1299,
         "price": 5299,
-        "discountPersent": 76,
+        "discountPercent": 76,
         "size": [
             {
               "name": "S",
@@ -1058,9 +1058,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -1068,9 +1068,9 @@
         "brand": "SASSAFRAS",
         "title": "Women Skater Yellow Dress",
         "color": "yellow",
-        "discountedPrice": 794,
+        "discountPrice": 794,
         "price": 1799,
-        "discountPersent": 55,
+        "discountPercent": 55,
         "size": [
             {
               "name": "S",
@@ -1086,9 +1086,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
@@ -1096,9 +1096,9 @@
         "brand": "AAYU",
         "title": "Women Fit and Flare Yellow, White, Black Dress",
         "color": "yellow",
-        "discountedPrice": 669,
+        "discountPrice": 669,
         "price": 1999,
-        "discountPersent": 66,
+        "discountPercent": 66,
         "size": [
             {
               "name": "S",
@@ -1114,9 +1114,9 @@
             }
           ],
           "quantity": 100,
-          "topLavelCategory": "Women",
-          "secondLavelCategory": "Clothing",
-          "thirdLavelCategory": "women_dress",
+          "topLevelCategory": "Women",
+          "secondLevelCategory": "Clothing",
+          "thirdLevelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     }
 ]

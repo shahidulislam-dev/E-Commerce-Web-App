@@ -14,6 +14,9 @@ import { StoreModule } from '@ngrx/store';
 import { AuthModule } from './modules/auth/auth.module';
 import { authReducer } from './states/auth/auth.reducer';
 import { userReducer } from './states/user/user.reducer';
+import { productReducer } from './states/products/product.reducer';
+import { cartReducer } from './states/cart/cart.reducer';
+import { orderReducer } from './states/order/order.reducer';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,13 @@ import { userReducer } from './states/user/user.reducer';
     MatButtonModule,
     MatMenuModule,
     AuthModule,
-    StoreModule.forRoot({auth: authReducer, user:userReducer})
+    StoreModule.forRoot({
+      auth: authReducer, 
+      user:userReducer, 
+      product:productReducer,
+      cart: cartReducer, 
+      order: orderReducer
+    })
   ],
   providers: [
     provideClientHydration(),

@@ -8,8 +8,8 @@
             Sort
           </button>
           <mat-menu #sortMenu="matMenu">
-            <button mat-menu-item>Price: high-low</button>
-            <button mat-menu-item>Price: low-high</button>
+            <button mat-menu-item (click)="handleSingleSelectFilter('price_high', 'sort')">Price: high-low</button>
+            <button mat-menu-item (click)="handleSingleSelectFilter('price_low', 'sort')">Price: low-high</button>
           </mat-menu>
         </div>
       </div>
@@ -73,7 +73,7 @@
         </div>
         <div class="lg:col-span-3">
             <div class="flex flex-wrap justify-evenly">
-                <ng-container *ngFor="let item of menPants">
+                <ng-container *ngFor="let item of products">
                     <app-products-card [product]="item"/>
                 </ng-container>
             </div>
