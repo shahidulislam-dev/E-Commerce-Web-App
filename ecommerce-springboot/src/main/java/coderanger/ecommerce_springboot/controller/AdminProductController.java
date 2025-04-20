@@ -6,7 +6,6 @@ import coderanger.ecommerce_springboot.request.CreateProductRequest;
 import coderanger.ecommerce_springboot.response.ApiResponse;
 import coderanger.ecommerce_springboot.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

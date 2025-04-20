@@ -37,37 +37,52 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product createProduct(CreateProductRequest createProductRequest) {
+
+        // Validate category names
+        if (createProductRequest.getTopLevelCategory() == null || createProductRequest.getTopLevelCategory().isBlank()) {
+            throw new IllegalArgumentException("Top-level category name must not be blank");
+        }
+
+        if (createProductRequest.getSecondLevelCategory() == null || createProductRequest.getSecondLevelCategory().isBlank()) {
+            throw new IllegalArgumentException("Second-level category name must not be blank");
+        }
+
+        if (createProductRequest.getThirdLevelCategory() == null || createProductRequest.getThirdLevelCategory().isBlank()) {
+            throw new IllegalArgumentException("Third-level category name must not be blank");
+        }
+
+        // Fetch or create top-level category
         Category topLevel = categoryRepository.findByName(createProductRequest.getTopLevelCategory());
-        if(topLevel == null){
+        if (topLevel == null) {
             Category topLevelCategory = new Category();
             topLevelCategory.setName(createProductRequest.getTopLevelCategory());
             topLevelCategory.setLevel(1);
-
             topLevel = categoryRepository.save(topLevelCategory);
         }
 
-        Category secondLevel = categoryRepository.findByNameAndParent(createProductRequest.
-                getSecondLevelCategory(), topLevel.getName());
-        if(secondLevel == null){
+        // Fetch or create second-level category
+        Category secondLevel = categoryRepository.findByNameAndParent(
+                createProductRequest.getSecondLevelCategory(), topLevel.getName());
+        if (secondLevel == null) {
             Category secondLevelCategory = new Category();
             secondLevelCategory.setName(createProductRequest.getSecondLevelCategory());
             secondLevelCategory.setParentCategory(topLevel);
             secondLevelCategory.setLevel(2);
-
             secondLevel = categoryRepository.save(secondLevelCategory);
         }
 
-        Category thirdLevel = categoryRepository.findByNameAndParent(createProductRequest.
-                getThirdLevelCategory(), secondLevel.getName());
-        if(thirdLevel == null){
+        // Fetch or create third-level category
+        Category thirdLevel = categoryRepository.findByNameAndParent(
+                createProductRequest.getThirdLevelCategory(), secondLevel.getName());
+        if (thirdLevel == null) {
             Category thirdLevelCategory = new Category();
             thirdLevelCategory.setName(createProductRequest.getThirdLevelCategory());
             thirdLevelCategory.setParentCategory(secondLevel);
             thirdLevelCategory.setLevel(3);
-
             thirdLevel = categoryRepository.save(thirdLevelCategory);
         }
 
+        // Create and save product
         Product product = new Product();
         product.setTitle(createProductRequest.getTitle());
         product.setColor(createProductRequest.getColor());
@@ -84,6 +99,7 @@ public class ProductServiceImpl implements ProductService {
 
         return productRepository.save(product);
     }
+
 
     @Override
     public String deleteProduct(Long productId) throws ProductException {
