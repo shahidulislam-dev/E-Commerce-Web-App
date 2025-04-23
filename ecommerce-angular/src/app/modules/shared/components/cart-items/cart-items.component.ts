@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class CartItemsComponent {
 
   @Input() showButton:any;
+  @Input() cartItem:any;
 
   updateCartItem(num:any){
     console.log("number",num)

@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/cart")
 public class CartController {
 
-    private CartService cartService;
-    private UserService userService;
-    private CartItemService cartItemService;
+    private final CartService cartService;
+    private final UserService userService;
+    private final CartItemService cartItemService;
 
     @Autowired
     public CartController(CartService cartService, UserService userService, CartItemService cartItemService) {
@@ -36,7 +36,7 @@ public class CartController {
         User user = userService.findUserProfileByJwt(jwt);
         Cart cart = cartService.findUserCart(user.getId());
 
-        return new ResponseEntity<Cart>(cart, HttpStatus.OK);
+        return new ResponseEntity<>(cart, HttpStatus.OK);
     }
 
     @PutMapping("/add")

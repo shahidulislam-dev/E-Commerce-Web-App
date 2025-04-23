@@ -7,7 +7,6 @@ import coderanger.ecommerce_springboot.repositoris.CategoryRepository;
 import coderanger.ecommerce_springboot.repositoris.ProductRepository;
 import coderanger.ecommerce_springboot.request.CreateProductRequest;
 import coderanger.ecommerce_springboot.services.ProductService;
-import coderanger.ecommerce_springboot.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -24,13 +23,11 @@ import java.util.stream.Collectors;
 public class ProductServiceImpl implements ProductService {
 
 
-    private ProductRepository productRepository;
-    private UserService userService;
-    private CategoryRepository categoryRepository;
+    private final ProductRepository productRepository;
+    private final CategoryRepository categoryRepository;
     @Autowired
-    public ProductServiceImpl(ProductRepository productRepository, UserService userService, CategoryRepository categoryRepository) {
+    public ProductServiceImpl(ProductRepository productRepository,  CategoryRepository categoryRepository) {
         this.productRepository = productRepository;
-        this.userService = userService;
         this.categoryRepository = categoryRepository;
     }
 
@@ -38,7 +35,6 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product createProduct(CreateProductRequest createProductRequest) {
 
-        // Validate category names
         if (createProductRequest.getTopLevelCategory() == null || createProductRequest.getTopLevelCategory().isBlank()) {
             throw new IllegalArgumentException("Top-level category name must not be blank");
         }
@@ -51,7 +47,6 @@ public class ProductServiceImpl implements ProductService {
             throw new IllegalArgumentException("Third-level category name must not be blank");
         }
 
-        // Fetch or create top-level category
         Category topLevel = categoryRepository.findByName(createProductRequest.getTopLevelCategory());
         if (topLevel == null) {
             Category topLevelCategory = new Category();
@@ -60,7 +55,6 @@ public class ProductServiceImpl implements ProductService {
             topLevel = categoryRepository.save(topLevelCategory);
         }
 
-        // Fetch or create second-level category
         Category secondLevel = categoryRepository.findByNameAndParent(
                 createProductRequest.getSecondLevelCategory(), topLevel.getName());
         if (secondLevel == null) {
@@ -71,7 +65,6 @@ public class ProductServiceImpl implements ProductService {
             secondLevel = categoryRepository.save(secondLevelCategory);
         }
 
-        // Fetch or create third-level category
         Category thirdLevel = categoryRepository.findByNameAndParent(
                 createProductRequest.getThirdLevelCategory(), secondLevel.getName());
         if (thirdLevel == null) {
@@ -82,7 +75,6 @@ public class ProductServiceImpl implements ProductService {
             thirdLevel = categoryRepository.save(thirdLevelCategory);
         }
 
-        // Create and save product
         Product product = new Product();
         product.setTitle(createProductRequest.getTitle());
         product.setColor(createProductRequest.getColor());
@@ -160,9 +152,7 @@ public class ProductServiceImpl implements ProductService {
 
         List<Product> pageContent = products.subList(startIndex, endIndex);
 
-        Page<Product> filteredProducts = new PageImpl<>(pageContent, pageable, products.size());
-
-        return filteredProducts;
+        return new PageImpl<>(pageContent, pageable, products.size());
     }
 
     @Override

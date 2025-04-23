@@ -18,8 +18,8 @@ import java.util.List;
 @RequestMapping("/api/orders")
 public class OrderController {
 
-    private OrderService orderService;
-    private UserService userService;
+    private final OrderService orderService;
+    private final UserService userService;
 
     @Autowired
     public OrderController(OrderService orderService, UserService userService) {
@@ -32,7 +32,7 @@ public class OrderController {
         User user = userService.findUserProfileByJwt(jwt);
 
         Orders order = orderService.createOrder(user, shippingAddress);
-        return new ResponseEntity<Orders>(order, HttpStatus.CREATED);
+        return new ResponseEntity<>(order, HttpStatus.CREATED);
     }
 
     @GetMapping("/user/order/history")
